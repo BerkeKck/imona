@@ -1,5 +1,5 @@
 
-body {
+*{
 margin: 0; 
 padding: 0;
 }
@@ -7,24 +7,23 @@ padding: 0;
 .container {
     min-height: 100vh;
     width: 100%;
-    display: flex;
+
 }
 
 .left {
+    width: 50%;
     float: left; 
-    flex: 1; 
-    order: 1;
 }
 
 .banner-img{
-    float: 1;
-    width: 100%;    
+    width: 720;
+    height: auto;
+    float: left;
+    width: 95%;    
 }
 
 .right {
-    flex: 1; 
-    order: 2;
-    padding: 60px;
+    margin-left: 60px;
     text-align: left;
     max-width: 100%;
 }
@@ -52,6 +51,7 @@ padding: 0;
 }
 .products {
     margin-top: 10px;
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -61,6 +61,7 @@ padding: 0;
 .product {
     flex: 1;
     margin: 15px;
+    margin-left: 30px;
     text-align: center;
 }
 
@@ -83,17 +84,13 @@ padding: 0;
 }
 
 
-@media only screen and (max-width:754px){
+@media only screen and (max-width:820px){
 
- .container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-}
+
 
 .left {
-height: 437px;
-width: 360px;
+float: left;
+width: 50%;
 width: auto;
 border-radius: 0px;
 border: 0.1;
@@ -101,30 +98,26 @@ border: 0.1;
 }
 
 .banner-img{
-height: 437px;
-width: 360px;
+width: 100%;
 left: 0px;
 top: 0px;
+
 }
 
 .right {
-    float: 1;
-    order: 1;
-    height: 10px;
-    width: 20px;
-    width: auto;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+    float: left;
     padding: 0;
+    margin-left: 40px;
+    
     
  
 }
 .headline1 {
+    float: left;
     font-size: 7vmin;
-    margin-bottom: 20px;
     text-align: left;
     color: whitesmoke;
+    
 }
 
 .headline2 {
@@ -146,7 +139,6 @@ top: 0px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    margin: 0;
 }
-
-
 }
