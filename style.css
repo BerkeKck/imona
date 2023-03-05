@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "itc_avant_garde_gothic_proMd";
+    /* src: url('../fonts/ITCAvantGardePro-Md.otf') format('opentype'); */
+    /* src: url('../fonts/ITCAvantGardePro-Bk.otf') format('opentype'); */
+    src: url("../task-deneme/fonts/ITCAvantGardePro-Bold.otf") format('opentype');
+    /* src: url('../fonts/ITCAvantGardePro-Demi.otf') format('opentype'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('../fonts/Avenir.ttc');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 *{
 margin: 0; 
@@ -19,7 +36,7 @@ padding: 0;
     width: 720;
     height: auto;
     float: left;
-    width: 95%;    
+    width: 100%;    
 }
 
 .right {
@@ -29,10 +46,12 @@ padding: 0;
 }
 
 .headline1 {
-    font-size: 7vmin;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: left;
+    font-family: "itc_avant_garde_gothic_proMd";
 }
+
 
 .headline2 {
     font-size: 3vmin;
@@ -40,14 +59,16 @@ padding: 0;
     color: #666666;
     margin-bottom: 40px;
     text-align: left;
+
 }
 
-.a {
-    font-size: 5vmin;
+a {
+    font-size: 12.8px;
     text-decoration: none;
     display:inline-block;
-    margin:10px;
+    margin: 5px;
     text-align: left;
+
 }
 .products {
     margin-top: 10px;
@@ -84,7 +105,7 @@ padding: 0;
 }
 
 
-@media only screen and (max-width:820px){
+@media only screen and (max-width:720px){
 
 
 
@@ -117,6 +138,11 @@ top: 0px;
     font-size: 7vmin;
     text-align: left;
     color: whitesmoke;
+    position: absolute;
+    top: 40%; 
+    width: 90%;
+    text-align: left;
+    padding: 0;
     
 }
 
@@ -124,13 +150,18 @@ top: 0px;
     display: none;
 }
 
-.a {
+a {
     font-size: 5vmin;
     text-decoration: none;
     display:inline-block;
     margin:10px;
-    text-align: left;
     color: whitesmoke;
+    text-align: left;
+    position: absolute;
+    width: 90%;
+    top: 55%;
+    padding: 0;
+
 }
 
 .products {
@@ -140,5 +171,9 @@ top: 0px;
     align-items: center;
     justify-content: flex-start;
     margin: 0;
+    position: absolute;
+    width: 90%;
+    top: 60%;
+    padding: 0;
 }
 }
