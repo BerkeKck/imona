@@ -1,78 +1,95 @@
 @font-face {
-    font-family: "itc_avant_garde_gothic_proMd";
-    /* src: url('../fonts/ITCAvantGardePro-Md.otf') format('opentype'); */
-    /* src: url('../fonts/ITCAvantGardePro-Bk.otf') format('opentype'); */
-    src: url("../task-deneme/fonts/ITCAvantGardePro-Bold.otf") format('opentype');
-    /* src: url('../fonts/ITCAvantGardePro-Demi.otf') format('opentype'); */
+    font-family: "ITC Avant Garde Gothic Pro";
+    src: url('../imona/fonts/ITCAvantGardePro-Md.otf') format('opentype'); 
+    src: url('../imona/fonts/ITCAvantGardePro-Bk.otf') format('opentype');
+    src: url("../imona/fonts/ITCAvantGardePro-Bold.otf") format('opentype');
+    src: url('../imona/fonts/ITCAvantGardePro-Demi.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'avenir';
-    src: url('../fonts/Avenir.ttc');
+    src: url('../imona/fonts/Avenir.ttc');
     font-weight: normal;
     font-style: normal;
 }
 
 
+
 *{
-margin: 0; 
-padding: 0;
+    margin: 0; 
+    padding: 0;
 }
 
-.container {
-    min-height: 100vh;
-    width: 100%;
-
-}
-
-.left {
+.left{
     width: 50%;
-    float: left; 
+    position: absolute;
+    left: 0;
+    height: 100%;
 }
 
 .banner-img{
-    width: 720;
-    height: auto;
-    float: left;
-    width: 100%;    
+    width: 100%;
 }
 
-.right {
-    margin-left: 60px;
-    text-align: left;
-    max-width: 100%;
+.right{
+    width: 50%;
+    position: absolute;
+    float: right;
+    height: 100%;
+    right: 0;
 }
 
-.headline1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-    font-family: "itc_avant_garde_gothic_proMd";
+.content{
+    margin-left: 120px;
+    margin-top: 94px;
+    margin-right: 106px;
 }
 
+.headline1{
+    padding-bottom: 10px;
+    font-family: 'ITC Avant Garde Gothic Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 130%; 
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+}
 
 .headline2 {
-    font-size: 3vmin;
+    /*b*/
+    font-family: 'Avenir';
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
     color: #666666;
-    margin-bottom: 40px;
-    text-align: left;
-
+    padding-bottom: 10px;
 }
 
 a {
-    font-size: 12.8px;
     text-decoration: none;
-    display:inline-block;
-    margin: 5px;
     text-align: left;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+}
 
+a:visited{
+    text-decoration: none;
+    
 }
 .products {
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -81,9 +98,15 @@ a {
 
 .product {
     flex: 1;
-    margin: 15px;
-    margin-left: 30px;
+    padding: 10px;
+    padding: 10px;
     text-align: center;
+    height: 310px;
+    width: 230px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    object-fit: cover;
 }
 
 .product img {
@@ -96,84 +119,74 @@ a {
 }
 
 .product-name {
-    font-weight: bold;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000000;
 }
 
 .product-price {
-    font-size: 18px;
-    color: gray;
-}
-
-
-@media only screen and (max-width:720px){
-
-
-
-.left {
-float: left;
-width: 50%;
-width: auto;
-border-radius: 0px;
-border: 0.1;
-
-}
-
-.banner-img{
-width: 100%;
-left: 0px;
-top: 0px;
-
-}
-
-.right {
-    float: left;
-    padding: 0;
-    margin-left: 40px;
-    
-    
- 
-}
-.headline1 {
-    float: left;
-    font-size: 7vmin;
-    text-align: left;
-    color: whitesmoke;
-    position: absolute;
-    top: 40%; 
-    width: 90%;
-    text-align: left;
-    padding: 0;
-    
-}
-
-.headline2 {
-    display: none;
-}
-
-a {
-    font-size: 5vmin;
-    text-decoration: none;
-    display:inline-block;
-    margin:10px;
-    color: whitesmoke;
-    text-align: left;
-    position: absolute;
-    width: 90%;
-    top: 55%;
-    padding: 0;
-
-}
-
-.products {
-    margin-top: 10px;
+    letter-spacing: 0em;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000000;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    position: absolute;
-    width: 90%;
-    top: 60%;
-    padding: 0;
+    text-align: center;
 }
+
+@media only screen and (max-width:754px){
+
+    .left{
+        width: 100%;
+        height: 50%;
+        
+    }
+    .right{
+        width: 100%;
+        
+        top: 28%;
+    }
+    
+    .headline2{
+        display: none;
+    }
+    a{
+        padding-left: 24px;
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 12.8px;
+        line-height: 17px;
+        text-align: left;
+        text-decoration: none;
+        display:inline-block;
+        color: #FFFFFF;
+        position: absolute;
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .headline1 {
+        padding: 24px; 
+        font-family: 'ITC Avant Garde Gothic Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        color: #FFFFFF;
+        
+    }
+
+    .content{
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
 }
