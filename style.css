@@ -88,13 +88,15 @@ a:visited{
 }
 
 .carousel{
-font-size: 0        ;
+font-size: 0;
 margin-left: 40px;
 margin-right: 40px;
 cursor: pointer;
 display: flex;
-overflow: hidden;
+overflow-x: hidden;
+overflow-y: hidden;
 }
+
 
 /* products */
 .products {
@@ -106,6 +108,7 @@ overflow: hidden;
     width: fit-content;
     flex-wrap: nowrap; 
     overflow-x: hidden; 
+    overflow-y: hidden;
     scroll-behavior: smooth; 
 }
 
@@ -144,17 +147,17 @@ overflow: hidden;
     flex: 1;
     padding: 10px;
     text-align: center;
-    height: 310px;
-    width: 230px;
+    height: 400px;
+    width: 400px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
     object-fit: cover;
-
 }
 
 .product img {
-    width: 180px;
+    height: 310px;
+    width: 230px;
 }
 
 .product-details {
@@ -202,6 +205,7 @@ overflow: hidden;
     .headline2{
         display: none;
     }
+
     a{
         padding-left: 24px;
         font-family: "Avenir";
@@ -255,6 +259,4 @@ overflow: hidden;
         overflow-x: hidden; 
         scroll-behavior: smooth; 
     }
-  
-  
 }
